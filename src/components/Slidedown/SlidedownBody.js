@@ -1,7 +1,7 @@
 function SlidedownBody({ isOpen, children }) {
   return (
-    <div className={`slidedownBody ${isOpen ? 'expanded' : ''}`}>
-      {children}
+    <div className={`slidedownBody ${isOpen ? "expanded" : ""}`}>
+      <div>{children}</div>
     </div>
   );
 }

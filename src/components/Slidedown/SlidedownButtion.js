@@ -1,12 +1,15 @@
-import ChevronUp from 'resource/chevron-up-solid.svg';
+import ChevronUp from "resource/chevron-up-solid.svg";
 
 function SlidedownButton(props) {
   const { isOpen, onClick, children } = props;
 
   return (
-    <div className="slidedownBtn" onClick={onClick}>
+    <div
+      className={`slidedownBtn  ${isOpen ? "expanded" : ""}`}
+      onClick={onClick}
+    >
       {children}
-      <img className={isOpen && 'reverse'} src={ChevronUp} alt="arrowUp" />
+      <img className="icon" src={ChevronUp} alt="arrowUp" />
     </div>
   );
 }

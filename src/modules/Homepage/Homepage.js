@@ -1,38 +1,28 @@
-import './Homepage.css';
+import "./Homepage.css";
 
 function Homepage() {
   return (
     <div className="Homepage">
       <section className="mainBg">
         <div>
-          <p>FIT<span>4</span>HAPPINESS</p>
+          <h4>
+            FIT<span>4</span>HAPPINESS
+          </h4>
           <button>SIGN UP NOW</button>
         </div>
       </section>
 
-      <section className="learnMore">
+      <section className="learnMore"></section>
 
-      </section>
+      <section className="amenities"></section>
 
-      <sectionn className="amenities">
+      <section className="motivation"></section>
 
-      </sectionn>
+      <section className="successStories"></section>
 
-      <section className="motivation">
+      <section className="contact"></section>
 
-      </section>
-
-      <section className="successStories">
-
-      </section>
-
-      <section className="contact">
-
-      </section>
-
-      <footer>
-
-      </footer>
+      <footer></footer>
     </div>
   );
 }

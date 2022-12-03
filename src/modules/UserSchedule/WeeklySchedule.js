@@ -15,16 +15,14 @@ function WeeklySchedule() {
       </thead>
       <tbody>
         <tr>
-          <tr>
-            <td>Workout plan</td>
-            <td>Workout A</td>
-            <td>Rest</td>
-            <td>Workout B</td>
-            <td>Rest</td>
-            <td>Workout A</td>
-            <td>Rest</td>
-            <td>Workout B</td>
-          </tr>
+          <td>Workout plan</td>
+          <td>Workout A</td>
+          <td>Rest</td>
+          <td>Workout B</td>
+          <td>Rest</td>
+          <td>Workout A</td>
+          <td>Rest</td>
+          <td>Workout B</td>
         </tr>
       </tbody>
     </table>
