@@ -1,16 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "App";
 import Homepage from "./modules/Homepage/Homepage";
+import AboutUs from "modules/AboutUs/AboutUs";
 import Login from "./modules/Login/Login";
 import SignUp from "modules/Signup/Signup";
 import UserPage from "modules/User/UserPage";
 import UserSchedule from "./modules/User/UserSchedule/UserSchedule";
 import UserInput from "./modules/User/UserInput/UserInput";
 import UserAnalysis from "./modules/User/UserAnalysis/UserAnalysis";
-import UserSuggestion from "./modules/User/UserSuggestion/UserSuggestion";
+import UserJournal from "./modules/User/UserJournal/UserJournal";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -27,15 +28,19 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: "/signup",
+        path: "/sign-up",
         element: <SignUp />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
       },
       {
         path: "/user",
         element: <UserPage />,
         children: [
           {
-            path: "/user",
+            path: "/user/schedule",
             element: <UserSchedule />,
           },
           {
@@ -48,7 +53,7 @@ const router = createBrowserRouter([
           },
           {
             path: "/user/suggestion",
-            element: <UserSuggestion />,
+            element: <UserJournal />,
           },
         ],
       },
