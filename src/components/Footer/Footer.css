@@ -1,0 +1,13 @@
+footer {
+  background-color: #c9e06d;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-family: "HK Grotesk Light";
+}
+footer > * {
+  width: 100px;
+  flex-grow: 1;
+  padding-left: 40px;
+}

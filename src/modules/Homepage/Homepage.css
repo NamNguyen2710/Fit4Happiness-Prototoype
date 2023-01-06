@@ -1,32 +1,59 @@
-.Homepage section {
-  height: 100vh;
-}
-
-.Homepage .mainBg {
+.Homepage .main-bg {
   background-image: url("../../resource/5d64c4f07eab396b6a0010201e68827a.jpg");
   background-size: cover;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  height: 100vh;
 }
-.Homepage .mainBg div {
+.Homepage .main-bg div {
   margin: auto 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+  width: 24rem;
 }
-.Homepage .mainBg div h4 {
+.Homepage .main-bg div h1 {
   color: white;
 }
-.Homepage .mainBg div h4 span {
+.Homepage .main-bg div h1 span {
   color: rgb(0, 128, 55);
-  font-size: inherit;
 }
-.Homepage .mainBg div button {
-  background-color: rgb(201, 226, 101);
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding: 1.5rem 2rem;
+.Homepage .main-bg button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+.Homepage .main-bg button.sign-up {
+  background-color: #c1ee32;
+}
+.Homepage .main-bg button.sign-up:hover {
+  background-color: #b4e02f;
+}
+.Homepage .main-bg button.login {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+.Homepage .main-bg button.login:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.Homepage .general-info {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.Homepage .general-info > div > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
 }

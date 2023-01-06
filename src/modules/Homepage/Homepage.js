@@ -1,98 +1,55 @@
-import FacebookIcon from "resource/facebook-f.svg";
-import TwitterIcon from "resource/twitter.svg";
-import InstagramIcon from "resource/instagram.svg";
+import InfoImg1 from "resource/s.jpg";
+import InfoImg2 from "resource/screen.jpg";
 import "./Homepage.css";
 
 function Homepage() {
   return (
     <div className="Homepage">
-      <section className="mainBg">
+      <section className="main-bg">
         <div>
-          <h4>
+          <h1>
+            <span>HEALTHIER</span> AND HAPPIER TODAY
+          </h1>
+          <button className="sign-up">SIGN UP NOW</button>
+          <button className="login">LOG IN</button>
+        </div>
+      </section>
+
+      <section className="general-info">
+        <div>
+          <img src={InfoImg1} alt="practice-img" />
+        </div>
+        <div>
+          <h1>Welcome to</h1>
+          <h3 className="logo-text black">
             FIT<span>4</span>HAPPINESS
-          </h4>
-          <button>SIGN UP NOW</button>
+          </h3>
+          <p>
+            Are you just started to train and don't know where to start? Or you
+            have been training for awhile but haven't see results yet?
+          </p>
+          <p>
+            We know it's hard to keep your pace on your fitness journey. And we
+            made it our mission to help you to overcome it.
+          </p>
+          <p>
+            Start your journey today with our <span>5000+</span> members.{" "}
+          </p>
         </div>
-      </section>
-
-      <section className="learnMore">
-        <img />
-        <h2>VISIBLE PATHWAY TO OBTAIN YOUR DREAM FITNESS BODY</h2>
-        <h4>
-          FIT<span>4</span>HAPPINESS
-        </h4>
-        <button>LEARN MORE</button>
-      </section>
-
-      <section className="amenities">
-        <h2>OUR AMENITIES</h2>
         <div>
-          <div>
-            <img />
-            <p>FITNESS DATA</p>
-            <p>Track your weights, reps & sets</p>
-            <button>LOG YOUR DATA</button>
-          </div>
-          <div>
-            <img />
-            <p>QUICK START</p>
-            <p>Default starting workout schedule</p>
-            <button>GET STARTED</button>
-          </div>
-          <div>
-            <img />
-            <p>WORKOUT RESULTS</p>
-            <p>Workout performance analyze</p>
-            <button>GET STARTED</button>
-          </div>
-          <div>
-            <img />
-            <p>IMPROVEMENT</p>
-            <p>Suggest supplemental lifts</p>
-            <button>GET STARTED</button>
-          </div>
+          <h4>Why We Created Fit4Happiness ?</h4>
+          <p>
+            Fit4Happiness was created to help those who are trying to lose
+            weight, gain weight and become stronger. Having a healthier body and
+            mind is what we believe help people to have a happier and enjoyable
+            life. We customize training plan for you so there is no more excuse.
+          </p>
+          <p>We hope you’ll join us.</p>
         </div>
-      </section>
-
-      <section className="motivation">
-        <h2>MOTIVATION ZONE</h2>
-        <p>
-          Motivation image from celebs and template for users to write their
-          workout reflections
-        </p>
-      </section>
-
-      <section className="successStories">
-        <h2>OUR USER REVIEWS</h2>
-      </section>
-
-      <section className="contact">
         <div>
-          <div>
-            <h4>
-              FIT<span>4</span>HAPPINESS
-            </h4>
-          </div>
-          <div>
-            <h4>123 Nguyen Van Linh St.</h4>
-            <h4>D7, Hochiminh city</h4>
-            <br />
-            <h4>(123) 456-7890</h4>
-            <h4>hello@fit4happiness.com</h4>
-            <h4>@fit4happiness</h4>
-          </div>
-          <div>
-            <h3>STAY CONNECTED</h3>
-            <div>
-              <img src={FacebookIcon} alt="facebookIcon" />
-              <img src={TwitterIcon} alt="twitterIcon" />
-              <img src={InstagramIcon} alt="instagramIcon" />
-            </div>
-          </div>
+          <img src={InfoImg2} alt="weight-img" />
         </div>
       </section>
-
-      <footer></footer>
     </div>
   );
 }

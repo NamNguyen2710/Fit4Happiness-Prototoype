@@ -1,4 +1,4 @@
-import Slidedown from "../../components/Slidedown/Slidedown";
+import Slidedown from "../../../components/Slidedown/Slidedown";
 import WeeklySchedule from "./WeeklySchedule";
 
 function UserSchedule() {

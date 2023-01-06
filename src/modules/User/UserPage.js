@@ -5,6 +5,7 @@ import CalendarIcon from "resource/calendar-regular.svg";
 import PenNoteIcon from "resource/file-pen-solid.svg";
 import ChartIcon from "resource/chart-line-solid.svg";
 import HandshakeIcon from "resource/handshake-angle-solid.svg";
+import { Outlet } from "react-router-dom";
 
 function UserPage() {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -34,6 +35,7 @@ function UserPage() {
           <h4>Suggestion</h4>
         </div>
       </sidebar>
+      <Outlet />
     </div>
   );
 }
