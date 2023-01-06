@@ -1,43 +1,43 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 
-import Homepage from "./modules/Homepage/Homepage";
-import Login from "./modules/Login/Login";
-import UserSchedule from "./modules/UserSchedule/UserSchedule";
-import UserInput from "./modules/UserInput/UserInput";
-import UserAnalysis from "./modules/User/UserAnalysis/UserAnalysis";
-import UserSuggestion from "./modules/UserSuggestion/UserSuggestion";
-import "./index.css";
+import Homepage from './modules/Homepage/Homepage';
+import Login from './modules/Login/Login';
+import UserSchedule from './modules/User/UserSchedule/UserSchedule';
+import UserInput from './modules/User/UserInput/UserInput';
+import UserAnalysis from './modules/User/UserJournal/UserJournal';
+import UserJournal from './modules/User/UserJournal/UserJournal';
+import './index.css';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Homepage />,
   },
   {
-    path: "/login",
+    path: '/login',
     element: <Login />,
   },
   {
-    path: "/user",
+    path: '/user/schedule',
     element: <UserSchedule />,
   },
   {
-    path: "/user/input",
+    path: '/user/input',
     element: <UserInput />,
   },
   {
-    path: "/user/detail",
+    path: '/user/detail',
     element: <UserAnalysis />,
   },
   {
-    path: "/user/suggestion",
-    element: <UserSuggestion />,
+    path: '/user/journal',
+    element: <UserJournal />,
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
