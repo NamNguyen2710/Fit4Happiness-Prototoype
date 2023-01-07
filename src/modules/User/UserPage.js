@@ -1,9 +1,10 @@
 import { NavLink, Outlet } from "react-router-dom";
+import "./UserPage.css";
 
 function UserPage() {
   return (
-    <div>
-      <sidebar>
+    <div className="user-page">
+      <aside>
         <NavLink
           to="/user/schedule"
           className={({ isActive }) => (isActive ? "active" : "")}
@@ -23,12 +24,12 @@ function UserPage() {
           Report
         </NavLink>
         <NavLink
-          to="/user/schedule"
+          to="/user/journal"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
-          My Fitness Journry
+          My Fitness Journey
         </NavLink>
-      </sidebar>
+      </aside>
       <Outlet />
     </div>
   );

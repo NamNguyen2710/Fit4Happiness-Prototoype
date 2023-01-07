@@ -16,20 +16,20 @@ import "./index.css";
 
 const router = createBrowserRouter([
   {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/sign-up",
+    element: <SignUp />,
+  },
+  {
     path: "/",
     element: <App />,
     children: [
       {
         path: "/",
         element: <Homepage />,
-      },
-      {
-        path: "/login",
-        element: <Login />,
-      },
-      {
-        path: "/sign-up",
-        element: <SignUp />,
       },
       {
         path: "/about-us",
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
             element: <UserAnalysis />,
           },
           {
-            path: "/user/suggestion",
+            path: "/user/journal",
             element: <UserJournal />,
           },
         ],

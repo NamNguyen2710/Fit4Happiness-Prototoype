@@ -1,16 +1,17 @@
 import { NavLink } from "react-router-dom";
-import Logo from "../../resource/Fit4Happiness.png";
+import Logo from "resource/F4HLogo.png";
+import Avatar from "resource/avatar.png";
 import "./Header.css";
 
 function Header({ isLogin }) {
   return (
     <header>
-      <div className="logo-section">
+      <NavLink to="/" className="logo-section">
         <img src={Logo} alt="Fit4happiness-logo" className="main-logo" />
         <h4 className="logo-text">
           FIT<span>4</span>HAPPINESS
         </h4>
-      </div>
+      </NavLink>
       <ul>
         <li>
           <NavLink
@@ -47,7 +48,9 @@ function Header({ isLogin }) {
           </NavLink>
         </li>
         <li>
-          <img />
+          <NavLink to={isLogin ? "/user/schedule" : "/login"}>
+            <img src={Avatar} alt="avatar" className="icon" />
+          </NavLink>
         </li>
       </ul>
     </header>
