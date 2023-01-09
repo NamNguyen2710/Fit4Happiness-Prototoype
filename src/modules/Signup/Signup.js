@@ -1,9 +1,13 @@
 import { NavLink } from "react-router-dom";
+import ReturnImg from "resource/circle-left-regular.svg";
 import "./Signup.css";
 
 function SignUp() {
   return (
     <div className="signup-page">
+      <NavLink to="/">
+        <img src={ReturnImg} alt="return-img" />
+      </NavLink>
       <h3 className="logo-text">
         FIT<span>4</span>HAPPINESS
       </h3>
