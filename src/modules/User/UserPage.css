@@ -10,7 +10,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
   padding-left: 40px;
   width: 14rem;
 }
@@ -21,6 +21,7 @@ aside a {
   text-decoration: none;
   padding: 0.8rem 30px 0.8rem 20px;
   border-radius: 1.2rem 0 0 1.2rem;
+  transform: translateY(-10vh);
 }
 aside a.active {
   background-color: #fff;

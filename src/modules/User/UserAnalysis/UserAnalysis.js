@@ -6,9 +6,12 @@ import {
   LineElement,
   Title,
   Tooltip,
-  Legend
-} from 'chart.js';
-import { Line } from 'react-chartjs-2';
+  Legend,
+} from "chart.js";
+import { Line } from "react-chartjs-2";
+import { NavLink } from "react-router-dom";
+import StarGif from "resource/5a89478832.gif";
+import "./UserAnalysis.css";
 
 Chart.register(
   CategoryScale,
@@ -22,37 +25,48 @@ Chart.register(
 
 const options = {
   responsive: true,
-  plugins: {
-    title: {
-      display: true,
-      text: 'Performance'
-    }
-  },
-  scales: {
-    x: {
-      display: true,
-      align: 'end',
-      text: 'Weight'
-    }
-  }
 };
 
 const data = {
-  labels: ['2/1', '4/1', '6/1',' 8/1', '9/1', '11/1','13/1'],
-  datasets: [{
-    label: 'Benchpress',
-    data: [65, 68, 71, 73, 75, 76, 77],
-    fill: false,
-    borderColor: 'rgb(75, 192, 192)',
-    tension: 0.3
-  }]
+  labels: [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    " Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ],
+  datasets: [
+    {
+      label: "Benchpress",
+      data: [12, 23, 23, 32, 36],
+      fill: false,
+      borderColor: "#0f7f3a",
+    },
+    {
+      label: "Benchpress",
+      data: [8, 12, 18, 20, 21],
+      fill: false,
+      borderColor: "#c1ee32",
+    },
+  ],
 };
 
 function UserAnalysis() {
   return (
-    <div>
-      <h3>User Analysis</h3>
+    <div className="analysis-page">
+      <h1>MY PERSONALIZED PLAN</h1>
+      <p>
+        <img src={StarGif} alt="star-gif" />
+        Good job! Here is your progress so far
+      </p>
+
       <Line options={options} data={data} />
+
+      <NavLink to="/user/journal">
+        <button>LOG YOUR JOURNEY</button>
+      </NavLink>
     </div>
   );
 }
