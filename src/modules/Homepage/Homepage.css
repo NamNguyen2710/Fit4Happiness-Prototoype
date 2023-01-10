@@ -52,6 +52,23 @@
   column-gap: 20px;
   row-gap: 20px;
 }
+.Homepage .general-info > div {
+  padding: 30px;
+}
+.Homepage .general-info > div > p,
+h1,
+h3,
+h4 {
+  margin-bottom: 10px;
+}
+.Homepage .general-info > div > h1 {
+  color: #0f7f3a;
+}
+.Homepage .general-info > div > h4 {
+  font-weight: 100;
+  text-align: center;
+  margin-top: 40px;
+}
 .Homepage .general-info > div > img {
   object-fit: cover;
   width: 100%;

@@ -81,6 +81,10 @@ code {
   color: #0f7f3a;
 }
 
+ul {
+  list-style-type: none;
+}
+
 @font-face {
   font-family: "High Cruiser";
   src: url(./resource/High-Cruiser-Regular.ttf);
