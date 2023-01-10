@@ -21,16 +21,14 @@ function Header({ isLogin }) {
             ABOUT US
           </NavLink>
         </li>
-        {isLogin && (
-          <li>
-            <NavLink
-              to="/user"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              PLAN
-            </NavLink>
-          </li>
-        )}
+        <li>
+          <NavLink
+            to="/user/schedule"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            PLAN
+          </NavLink>
+        </li>
         <li>
           <NavLink
             to="/blog"
