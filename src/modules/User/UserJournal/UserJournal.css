@@ -67,11 +67,11 @@
   margin-bottom: 3rem;
 }
 
-.journal-page > p {
+.journal-page > p.helper {
   text-align: center;
   margin-bottom: 10rem;
 }
-.journal-page > p > span {
+.journal-page > p.helper > span {
   color: #0f7f3a;
   cursor: pointer;
   text-decoration: underline;

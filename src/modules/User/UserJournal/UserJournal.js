@@ -38,7 +38,7 @@ function UserJournal() {
         <>
           <img src={CongratulationImg} alt="congratulation-img" />
           <h3>ON FINISHING YOUR WORKOUT TODAY!</h3>
-          <p>
+          <p className="helper">
             Redo your Fitness Journey?{" "}
             <span onClick={() => setFinish(false)}>Click here</span>
           </p>
